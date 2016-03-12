@@ -21,7 +21,7 @@ RUN apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get -yqq install --
     imagemagick\
     apache2-mpm-prefork\
     apache2-utils\
-    libmcrypt-dev\
+    php5-mcrypt\
     libapache2-mod-php5 &&\
     rm -rf /var/lib/apt/lists/* &&\
     a2enmod rewrite &&\
